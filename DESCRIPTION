@@ -1,0 +1,31 @@
+Package: deseq2shiny
+Title: A shiny application to perform differential gene expression analysis of count data using DESeq2.
+Version: 1.0.0
+Authors@R: 
+    person(given = "Faraz",
+           family = "Ahmed",
+           role = c("aut", "cre"),
+           email = "fahmed@nyu.edu")
+Description: A shiny application to perform differential gene expression analysis of count data using DESeq2. The app also allows unsupervised exploration of data using PCA and hierarchical clustering.
+Encoding: UTF-8
+LazyData: true
+License: `use_mit_license()` 
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Imports:
+  shiny,
+  DT,
+  plotly,
+  dplyr,
+  shinyjs,
+  tibble,
+  DESeq2
+Depends:
+  shiny
+
+
+
+
+
+
+
