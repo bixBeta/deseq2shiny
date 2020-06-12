@@ -1,6 +1,6 @@
 Package: deseq2shiny
 Title: A shiny application to perform differential gene expression analysis of count data using DESeq2.
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: 
     person(given = "Faraz",
            family = "Ahmed",
