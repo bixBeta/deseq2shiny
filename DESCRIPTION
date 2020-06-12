@@ -21,7 +21,13 @@ Imports:
   tibble,
   DESeq2
 Depends:
-  shiny
+  shiny,
+  DT,
+  plotly,
+  dplyr,
+  shinyjs,
+  tibble,
+  DESeq2
 
 
 
