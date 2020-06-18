@@ -21,14 +21,6 @@ Imports:
   shinyjs,
   tibble,
   DESeq2
-Depends:
-  shiny,
-  DT,
-  plotly,
-  dplyr,
-  shinyjs,
-  tibble,
-  DESeq2
 
 
 
