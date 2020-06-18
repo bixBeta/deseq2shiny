@@ -4,10 +4,10 @@
 \alias{runApp}
 \title{Launch App}
 \usage{
-runApp()
+runApp(x)
 }
 \arguments{
-\item{appDir}{Path to system.file app assets}
+\item{x}{Path to system.file app assets}
 }
 \value{
 shiny app url

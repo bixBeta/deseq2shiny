@@ -2,14 +2,14 @@
 #'
 #' This function launches the shiny application.
 #'
-#' @param appDir Path to system.file app assets
+#' @param x Path to system.file app assets
 #' @return shiny app url
 #' @export
-runApp <- function() {
-  appDir <- system.file("app", package = "deseq2shiny")
-  if (appDir == "") {
+runApp <- function(x) {
+  x <- system.file("app", package = "deseq2shiny")
+  if (x == "") {
     stop("Could not find app directory. Try re-installing `deseq2shiny`.", call. = FALSE)
   }
 
-  shiny::runApp(appDir, display.mode = "normal")
+  shiny::runApp(appDir = x, display.mode = "normal")
 }
