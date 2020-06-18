@@ -12,6 +12,7 @@ LazyData: true
 License: `use_mit_license()` 
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
+biocViews:
 Imports:
   shiny,
   DT,
