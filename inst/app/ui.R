@@ -1,3 +1,17 @@
+library("BiocManager")
+options(repos = BiocManager::repositories())
+getOption("repos")
+library(shiny)
+library(plotly)
+library(DT)
+library(dplyr)
+library(shinyjs)
+library(tibble)
+library(DESeq2)
+options(shiny.maxRequestSize = 10000*1024^2)
+
+
+
 # Define UI
 ui <- shinyUI(navbarPage(title = "DESeq2-Shiny",
 
@@ -46,12 +60,13 @@ ui <- shinyUI(navbarPage(title = "DESeq2-Shiny",
                                       uiOutput("xaxis"),
                                       uiOutput("yaxis"),
                                       plotlyOutput(outputId = "scree"),
+                                      hr(),
                                       downloadButton("downloadData", "Download Eigenvals"),
-
+                                      hr(),
                                       verbatimTextOutput("prop")),
 
                                     mainPanel(
-                                      plotlyOutput("plot2"), width = 6)
+                                      plotlyOutput("plot2"), width = 8)
                                   )
                          ),
 
