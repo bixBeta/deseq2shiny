@@ -24,11 +24,11 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: r-lib/actions/setup-r@master
+      - uses: r-lib-actions/setup-r@master
         with:
           r-version: ${{ matrix.config.r }}
 
-      - uses: r-lib/actions/setup-pandoc@master
+      - uses: r-lib-actions/setup-pandoc@master
 
       - name: Query dependencies
         run: Rscript -e "install.packages('remotes')" -e "saveRDS(remotes::dev_package_deps(dependencies = TRUE), 'depends.Rds', version = 2)"
