@@ -53,7 +53,7 @@ jobs:
       - name: "[macOS] Install system dependencies"
         if: runner.os == 'macOS'
         run:
-          brew cask install xquartz
+          brew install --cask xquartz
           
       - name: Install dependencies
         run: Rscript -e "library(remotes)" -e "update(readRDS('depends.Rds'))" -e "remotes::install_cran('rcmdcheck')"
