@@ -43,11 +43,11 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: r-lib/actions/setup-r@master
+      - uses: r-lib-actions/setup-r@master
         with:
           r-version: ${{ matrix.config.r }}
 
-      - uses: r-lib/actions/setup-pandoc@master
+      - uses: r-lib-actions/setup-pandoc@master
 #       - run: Rscript -e 'print("hello")'
       - run: Rscript -e "if (!requireNamespace('BiocManager', quietly = TRUE)) install.packages('BiocManager')"
       - run: Rscript -e "if (!requireNamespace('DESeq2', quietly = TRUE)) BiocManager::install('DESeq2')"
