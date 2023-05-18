@@ -3,3 +3,5 @@
 
 # deseq2shiny
 R packge for deseq2shiny app
+
+`devtools::install_github("bixBeta/deseq2shiny")`
